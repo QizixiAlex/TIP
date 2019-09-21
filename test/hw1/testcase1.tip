@@ -1,0 +1,27 @@
+test() {
+    var x,y,z;
+    x = 1;
+    y = 1;
+    if (x == y) {
+        output y;
+    }
+    y = -1;
+    if (x == y) {
+        output y;
+    }
+    z = alloc x;
+    if (*z == x) {
+        z = null;
+    }
+    return x;
+}
+
+poly(p) {
+    return *p;
+}
+
+main() {
+    var n;
+    n = 1;
+    return n;
+}
