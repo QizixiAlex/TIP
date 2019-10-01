@@ -41,7 +41,7 @@ abstract class ReachingDefAnalysis(cfg: IntraproceduralProgramCfg)(implicit decl
 }
 
 /**
-  * Available expressions analysis that uses the simple fipoint solver.
+  * Reaching definition analysis that uses the simple fipoint solver.
   */
 class ReachingDefAnalysisSimpleSolver(cfg: IntraproceduralProgramCfg)(implicit declData: DeclarationData)
     extends ReachingDefAnalysis(cfg)
@@ -49,7 +49,7 @@ class ReachingDefAnalysisSimpleSolver(cfg: IntraproceduralProgramCfg)(implicit d
     with ForwardDependencies
 
 /**
-  * Available expressions analysis that uses the worklist solver.
+  * Reaching definition analysis that uses the worklist solver.
   */
 class ReachingDefAnalysisWorklistSolver(cfg: IntraproceduralProgramCfg)(implicit declData: DeclarationData)
     extends ReachingDefAnalysis(cfg)
